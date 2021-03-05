@@ -30,13 +30,13 @@ box2.addEventListener(`click`,()=>{
       colorfiller(box2);
 },);
 
- var shape = canvas.getContext("2d");
+//  var shape = canvas.getContext("2d");
 
- for (let index = 0; index < 3; index++) {
-       let x = Math.random()*window.innerWidth;
-       let y = Math.random()*window.innerHeight;
-      //  shape.fillRect(x, y, 50, 50); 
-      shape.beginPath();
-      shape.arc(x, y, 20, 0, 2*Math.PI);
-      shape.stroke();   
- }
+//  for (let index = 0; index < 3; index++) {
+//        let x = Math.random()*window.innerWidth;
+//        let y = Math.random()*window.innerHeight;
+//       //  shape.fillRect(x, y, 50, 50); 
+//       shape.beginPath();
+//       shape.arc(x, y, 20, 0, 2*Math.PI);
+//       shape.stroke();   
+//  }
