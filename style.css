@@ -1,0 +1,36 @@
+
+       .boxa
+        {
+         height: 2cm;
+         width: 2cm;
+         background-color: #B890F1;
+         position: relative;
+        }
+        .boxb
+        {
+         height:2cm;
+         width: 2cm;
+         background-color: #0A333E;
+        }
+        .box1
+        {
+          height: 3cm;
+          width: 3cm;
+          /* border-style: solid; */
+          position: relative;
+          top: 3cm;
+          left: 19cm;
+        }
+        .box2
+        {
+           height: 3cm;
+           width: 3cm;
+           position: relative;
+           top: 3cm;
+           left: 19cm;
+        }
+        .cnv{
+          /* border: 1px;
+          border-color: darkblue; */
+          border-style: solid;
+        }
