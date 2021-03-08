@@ -1,34 +1,34 @@
-let box2 = document.querySelector(".box2");
-let boxa = document.querySelector(".boxa");
-let box1 = document.querySelector(".box1");
-let boxb = document.querySelector(".boxb");
-let body = document.querySelector(".body");
-let canvas = document.querySelector(".cnv");
-let selectbox;
+// let box2 = document.querySelector(".box2");
+// let boxa = document.querySelector(".boxa");
+// let box1 = document.querySelector(".box1");
+// let boxb = document.querySelector(".boxb");
+// let body = document.querySelector(".body");
+// let canvas = document.querySelector(".cnv");
+// let selectbox;
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+// canvas.width = window.innerWidth;
+// canvas.height = window.innerHeight;
 
-console.log(window.innerWidth);
-console.log(window.innerHeight);
+// console.log(window.innerWidth);
+// console.log(window.innerHeight);
 
-function colorfiller(parameters) { 
-      selectbox = parameters;
-      boxa.addEventListener(`mouseenter`,()=>{
-            selectbox.style.backgroundColor = window.getComputedStyle(boxa).backgroundColor;
-      },);
-      boxb.addEventListener(`mouseenter`,()=>{
-            selectbox.style.backgroundColor = window.getComputedStyle(boxb).backgroundColor;
-      },);      
-}
+// function colorfiller(parameters) { 
+//       selectbox = parameters;
+//       boxa.addEventListener(`mouseenter`,()=>{
+//             selectbox.style.backgroundColor = window.getComputedStyle(boxa).backgroundColor;
+//       },);
+//       boxb.addEventListener(`mouseenter`,()=>{
+//             selectbox.style.backgroundColor = window.getComputedStyle(boxb).backgroundColor;
+//       },);      
+// }
 
-box1.addEventListener(`click`,()=>{
-      colorfiller(box1);
-},);
+// box1.addEventListener(`click`,()=>{
+//       colorfiller(box1);
+// },);
 
-box2.addEventListener(`click`,()=>{
-      colorfiller(box2);
-},);
+// box2.addEventListener(`click`,()=>{
+//       colorfiller(box2);
+// },);
 
 //  var shape = canvas.getContext("2d");
 

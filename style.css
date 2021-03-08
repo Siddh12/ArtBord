@@ -1,5 +1,5 @@
 
-       .boxa
+       /* .boxa
         {
          height: 2cm;
          width: 2cm;
@@ -17,7 +17,7 @@
           height: 3cm;
           width: 3cm;
           /* border-style: solid; */
-          position: relative;
+          /* position: relative;
           top: 3cm;
           left: 19cm;
         }
@@ -32,5 +32,268 @@
         .cnv{
           /* border: 1px;
           border-color: darkblue; */
-          border-style: solid;
+          /* border-style: solid;
+        } */ 
+
+
+
+        .body{
+          background-color: darkolivegreen;
+          /* height:20cm; */
         }
+        .header{
+          width: 9cm;
+          height: 1cm;
+          border: black;
+          border-style: solid;
+          position: relative;
+          left: 15cm;
+          border-radius: 40px;
+          background-color: #338B5A;
+        }
+         /* hadder */
+         .home,.help{
+           width: 2cm;
+           height: 0.8cm;
+           background-color: darkgoldenrod;
+           text-align: centerd;
+           cursor: pointer;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           border-radius: 15px;
+         }
+ 
+         .contact{
+           position: relative;
+           left: 6cm;
+           bottom: 1.5cm;
+           width: 2.5cm;
+           height: 0.8cm;
+           background-color: darkgoldenrod;
+           text-align: center;
+           cursor: pointer;
+           justify-content: center;
+           display: flex;
+           align-items: center;
+           border-radius: 15px;
+         }
+ 
+         .home{
+           position: relative;
+           left:0.9cm;
+           top: 0.1cm;
+         }
+ 
+         .help{
+           position: relative;
+           left: 3.4cm;
+           bottom: 0.7cm;
+         }
+
+
+
+        /* lower content */
+
+
+
+         .shape{
+           width: 6.8cm;
+           height: 13cm;
+           background-color: white;
+           border: black;
+           border-style: solid;
+           position: relative;
+           left: 0.7cm;
+           top: 1.8cm;
+           text-align: center;
+           border-radius: 50PX;
+         }
+
+         .canvas{
+          width: 20cm;
+          height: 15cm;
+          border: black;
+          border-style: solid;
+          position: relative;
+          left: 9.5cm;
+          bottom: 12.2cm;
+          text-align: center;
+          background-color: #404040;
+          border-radius: 80PX;
+         }
+         
+         .color{
+          width: 6.7cm;
+           height: 13cm;
+           background-color:#FFFEFC;
+           border: black ;
+           border-style: solid;
+           position: relative;
+           left: 32cm;
+           text-align: center; 
+           bottom: 28.2cm;
+           border-radius: 50px;
+         }
+
+         /* tag design */
+
+
+
+         .canvastitel,.shapetittle,.colortitel {
+          background-color:#3A6A81;
+          color: white;
+          font-family: Segoe Print;
+          display: flex;
+          justify-content: center;
+          align-items: center;   
+         }
+         .colortitel{
+           width: 2.5cm;
+           height: 0.6cm;
+           border-color: black;
+           border-style: solid;
+           border-radius: 40px 40px 0 0;
+           position:relative;
+           left: 34.2cm;
+           bottom: 13cm;
+         }
+         .shapetittle{
+          width: 2.5cm;
+          height: 0.6cm;
+          border-color: black;
+          border-style: solid;
+          border-radius: 40px 40px 0 0;
+          position: relative;
+          left: 2.9cm;
+          top: 1.9cm;
+         }
+
+         .canvastitel{
+          border: black;
+          border-style: solid;
+          border-radius: 40cm 40cm 0 0;
+          width: 5cm;
+          height: 0.8cm;
+          position: relative;
+          left:17cm;
+          bottom: 11.4cm;
+         }
+
+        
+
+         /* more items */
+
+
+        .color7,.moreshape{
+          width: 2.5cm;
+          height: 0.7cm;
+          font-size: 1.5ch;
+          font-weight: bold;
+          border: gray;
+          border-style: solid;
+          background-color:white;
+          text-align: center;
+          cursor: pointer;
+          justify-content: center;
+          display: flex;
+          align-items: center;
+          position: relative;
+          border-radius: 15px;
+        }
+        .color7{
+          position: relative;
+          top: 4.3cm;
+          left: 2.1cm;
+        }
+        .moreshape{
+          top: 11.9cm;
+          left:2cm;
+        }
+
+        .color1,.color2,.color3,.color4,.color5,.color6{
+          width: 4.6cm;
+          height: 1cm;
+          border: black;
+          border-style: solid;
+          position: relative;
+          top: 0.4cm;
+          left: 0.5cm;
+        }
+        .color1{
+          background-color: #214545;
+        }
+        .color2{
+          position: relative;
+          top: 1.1cm;
+          background-color: #B33D3F;
+        }
+        .color3{
+          position: relative;
+          top: 1.8cm;
+          background-color: #827F69;
+        }
+        .color4{
+          position: relative;
+          top: 2.5cm;
+          background-color: #F4EC80;
+        }
+        .color5{
+          position: relative;
+          top: 3.2cm;
+          background-color: #8FAB85;
+        }
+        .color6{
+          position: relative;
+          top: 3.9cm; 
+          background-color: #A76269;
+        }
+        .colorscarch{
+          width: 4cm;
+          height: 0.7cm;
+          border: black;
+          border-style: solid;
+          border-radius: 40px;
+          position: relative;
+          left: 1.3cm;
+          top: 0.18cm;
+          background-color:#D4CEB8;
+        }
+        .shape1,.shape2,.shape3,.shape4,.shape5,.shape6,.shape7,.shape8{
+          width: 2cm;
+          height: 2cm;
+          border: black;
+          border-style: solid;
+          position: relative;
+          top: 0.4cm;
+          left: 0.5cm;
+        }
+        .shape5,.shape6,.shape7,.shape8{
+          position: relative;
+          left: 4cm;
+        } 
+        .shape8{
+          position: relative;
+          
+        }
+        .shape7{
+
+        }
+        .shape6{
+
+        }
+        .shape5{
+          position: relative;
+          bottom: 8cm;
+        }
+        .shape4
+        .shape3
+        .shape2
+        .shape1
+        
+        
+
+        
+
+
+
