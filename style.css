@@ -207,7 +207,7 @@
           left: 2.1cm;
         }
         .moreshape{
-          top: 11.9cm;
+          top: 1.6cm;
           left:2cm;
         }
 
@@ -259,37 +259,23 @@
           top: 0.18cm;
           background-color:#D4CEB8;
         }
-        .shape1,.shape2,.shape3,.shape4,.shape5,.shape6,.shape7,.shape8{
-          width: 2cm;
-          height: 2cm;
+        .shape1,.shape2{
+          width: 5cm;
+          height: 5cm;
           border: black;
           border-style: solid;
           position: relative;
-          top: 0.4cm;
-          left: 0.5cm;
+          top: 0.2cm;
+          left: 0.8cm;
         }
-        .shape5,.shape6,.shape7,.shape8{
+        .shape2{
           position: relative;
-          left: 4cm;
-        } 
-        .shape8{
+          top: 1.3cm;
+        }
+        .shape1{
           position: relative;
-          
+          top: 1cm;
         }
-        .shape7{
-
-        }
-        .shape6{
-
-        }
-        .shape5{
-          position: relative;
-          bottom: 8cm;
-        }
-        .shape4
-        .shape3
-        .shape2
-        .shape1
         
         
 
