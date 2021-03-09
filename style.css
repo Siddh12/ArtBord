@@ -268,15 +268,15 @@
           top: 0.2cm;
           left: 0.8cm;
           background-color: #3B585C;
-        }
-        .shape2{
-          position: relative;
-          top: 1.3cm;
+          border-radius: 10px;
         }
         .shape1{
           position: relative;
           top: 1cm;
-
+        }
+        .shape2{
+          position: relative;
+          top: 1.3cm;
         }
         .art0{
           width: 15cm;
@@ -322,25 +322,22 @@
           left: 9.53cm;
         }
         .art5{
-          height:0cm;
-          width: 0cm;
-          border-top: 3.8cm solid transparent;
-          border-right:2cm solid transparent;
-          /* border-bottom: 2cm solid greenyellow; */
-          border-left: 4cm solid white; 
+          height:4cm;
+          width: 0.5cm;
+          border: white;
+          border-style: solid;
           position: relative;
           bottom: 10cm;
           left: 9.5cm;
         }
         .art6{
-          height:0cm;
-          width: 0cm;
-          border-top: 3.1cm solid transparent;
-          border-right:1.5cm solid transparent;
-          /* border-bottom: 2cm solid greenyellow; */
-          border-left: 3.1cm solid #404040; 
-          position: absolute;
-          bottom: 6.8cm;
+          height:1.5cm;
+          width: 1.5cm;
+          border: white;
+          border-style: solid;
+          border-radius: 50px;
+          position: relative;
+          bottom: 11cm;
           left: 9.75cm;
         }
         .art7,.art8{
@@ -357,22 +354,22 @@
           border-style: solid;
           border-radius: 50px;
           position: relative;
-          bottom: 23.4cm;
+          bottom: 25.32cm;
           left: 7.5cm;
         }
         .art9{
           position: relative;
-          bottom:21.76cm;
+          bottom:23.7cm;
           left: 10.4cm;
         }
         .art7{
           position: relative;
-          bottom: 15cm;
+          bottom: 16.5cm;
           left: 5cm;
         }
         .art8{
           position: relative;
-          bottom: 17.1cm;
+          bottom: 18.6cm;
           left: 12.5cm;
         }
         .firstart{
