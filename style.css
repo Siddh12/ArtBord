@@ -100,7 +100,7 @@
          .shape{
            width: 6.8cm;
            height: 13cm;
-           background-color: white;
+           background-color: #7B7C86;
            border: black;
            border-style: solid;
            position: relative;
@@ -267,6 +267,7 @@
           position: relative;
           top: 0.2cm;
           left: 0.8cm;
+          background-color: #3B585C;
         }
         .shape2{
           position: relative;
@@ -275,6 +276,7 @@
         .shape1{
           position: relative;
           top: 1cm;
+
         }
         .art0{
           width: 15cm;
