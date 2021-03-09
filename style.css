@@ -276,10 +276,106 @@
           position: relative;
           top: 1cm;
         }
-        
-        
-
-        
-
-
-
+        .art0{
+          width: 15cm;
+          height: 10cm;
+          border: white;
+          border-style: solid;
+          position: relative;
+          top: 2.5cm;
+          left: 2.4cm;
+        }
+        .art1,.art2{
+          width: 1.3cm;
+          height: 1.3cm;
+          border: white;
+          border-style: solid;
+        }
+        .art1{
+          position: relative;
+          bottom: 5.2cm;
+          left: 1.04cm;
+        }
+        .art2{
+          position: relative;
+          bottom: 6.63cm;
+          left: 17.46cm;
+        }
+        .art3{
+          width: 7cm;
+          height: 1cm;
+          border: white;
+          border-style: solid;
+          position: relative;
+          bottom: 2.3cm;
+          left: 8cm;
+        }
+        .art4{
+          width: 4cm;
+          height:0.4cm;
+          border: white;
+          border-style: solid;
+          position: relative;
+          bottom: 4.2cm;
+          left: 9.53cm;
+        }
+        .art5{
+          height:0cm;
+          width: 0cm;
+          border-top: 3.8cm solid transparent;
+          border-right:2cm solid transparent;
+          /* border-bottom: 2cm solid greenyellow; */
+          border-left: 4cm solid white; 
+          position: relative;
+          bottom: 10cm;
+          left: 9.5cm;
+        }
+        .art6{
+          height:0cm;
+          width: 0cm;
+          border-top: 3.1cm solid transparent;
+          border-right:1.5cm solid transparent;
+          /* border-bottom: 2cm solid greenyellow; */
+          border-left: 3.1cm solid #404040; 
+          position: absolute;
+          bottom: 6.8cm;
+          left: 9.75cm;
+        }
+        .art7,.art8{
+           height: 2cm;
+           width: 2cm;
+           border: white;
+           border-style: solid;
+           border-radius: 50px;
+        }
+        .art9,.art10{
+          height: 1.5cm;
+          width: 1.5cm;
+          border: white;
+          border-style: solid;
+          border-radius: 50px;
+          position: relative;
+          bottom: 23.4cm;
+          left: 7.5cm;
+        }
+        .art9{
+          position: relative;
+          bottom:21.76cm;
+          left: 10.4cm;
+        }
+        .art7{
+          position: relative;
+          bottom: 15cm;
+          left: 5cm;
+        }
+        .art8{
+          position: relative;
+          bottom: 17.1cm;
+          left: 12.5cm;
+        }
+        .firstart{
+          height:160px;
+          width:160px;
+          position: relative;
+          top: 0.4cm; 
+        }
