@@ -43,6 +43,7 @@
 
 
 var fillincolor;
+var art0 = document.querySelector(".art0");
 var art1 = document.querySelector(".art1");
 var art2 = document.querySelector(".art2");
 var art3 = document.querySelector(".art3");
@@ -53,8 +54,7 @@ var art7 = document.querySelector(".art7");
 var art8 = document.querySelector(".art8");
 var art9 = document.querySelector(".art9");
 var art10 = document.querySelector(".art10");
-var canvas = document.querySelector("canvas");
-var shape = document.querySelector("shape2");
+var firstart = document.querySelector(".firstart");
 
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
@@ -62,7 +62,53 @@ var color3 = document.querySelector(".color3");
 var color4 = document.querySelector(".color4");
 var color5 = document.querySelector(".color5");
 var color6 = document.querySelector(".color6");
+var shape2 = document.querySelector(".shape2");
 
+var array =[art0,art1,art2,art3,art4,art5,art6,art7,art8,art9,art10,];
+
+firstart.addEventListener(`click`,()=>{
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        if (element == art9) {
+            element.style.border= "white";
+            element.style.borderStyle = "solid";
+            element.style.bottom = "23.7cm";
+            element.style.left= "10.4cm";
+            element.style.backgroundColor = "#404040";
+        } else if(element == art10){
+            element.style.border= "white";
+            element.style.borderStyle = "solid";
+            element.style.bottom = "25.32cm";
+            element.style.left= "7.5cm";
+            element.style.backgroundColor = "#404040";
+        } else{
+            element.style.border= "white";
+            element.style.borderStyle = "solid";
+            element.style.backgroundColor = "#404040";
+        }
+        
+    }
+})
+
+shape2.addEventListener(`click`,()=>{
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        if (element == art9) {
+               element.style.backgroundColor = "#404040";
+               element.style.border = "#404040";
+               element.style.bottom = "23cm"
+               element.style.left= "10.4cm"
+        } else if(element == art10){
+                element.style.backgroundColor = "#404040";
+                element.style.border = "#404040";
+                element.style.bottom = "23cm"
+                element.style.left= "10.4cm"
+        } else {
+                element.style.backgroundColor = "#404040";
+                element.style.border = "#404040";   
+        }
+    }
+});
 
 art1.addEventListener(`click`,()=>{
     colorfiller(art1);
@@ -95,10 +141,6 @@ art10.addEventListener(`click`,()=>{
     colorfiller(art10);
 });
 
-shape.addEventListener(`click`,()=>{
-    // art1.style.backgroundColor = window.getComputedStyle(color1).backgroundColor;
-    console.log("siddh");
-});
 
 function colorfiller(params) {
     fillincolor = params;
@@ -121,3 +163,6 @@ function colorfiller(params) {
         fillincolor.style.backgroundColor = window.getComputedStyle(color6).backgroundColor; 
     });
 };
+
+
+

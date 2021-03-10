@@ -277,12 +277,11 @@
         .shape2{
           position: relative;
           top: 1.3cm;
+          background-color: black;
         }
         .art0{
           width: 15cm;
           height: 10cm;
-          border: white;
-          border-style: solid;
           position: relative;
           top: 2.5cm;
           left: 2.4cm;
@@ -290,8 +289,6 @@
         .art1,.art2{
           width: 1.3cm;
           height: 1.3cm;
-          border: white;
-          border-style: solid;
         }
         .art1{
           position: relative;
@@ -306,8 +303,6 @@
         .art3{
           width: 7cm;
           height: 1cm;
-          border: white;
-          border-style: solid;
           position: relative;
           bottom: 2.3cm;
           left: 8cm;
@@ -315,8 +310,6 @@
         .art4{
           width: 4cm;
           height:0.4cm;
-          border: white;
-          border-style: solid;
           position: relative;
           bottom: 4.2cm;
           left: 9.53cm;
@@ -324,8 +317,6 @@
         .art5{
           height:4cm;
           width: 0.5cm;
-          border: white;
-          border-style: solid;
           position: relative;
           bottom: 10cm;
           left: 9.5cm;
@@ -333,8 +324,6 @@
         .art6{
           height:1.5cm;
           width: 1.5cm;
-          border: white;
-          border-style: solid;
           border-radius: 50px;
           position: relative;
           bottom: 11cm;
@@ -343,15 +332,11 @@
         .art7,.art8{
            height: 2cm;
            width: 2cm;
-           border: white;
-           border-style: solid;
            border-radius: 50px;
         }
         .art9,.art10{
           height: 1.5cm;
           width: 1.5cm;
-          border: white;
-          border-style: solid;
           border-radius: 50px;
           position: relative;
           bottom: 25.32cm;
@@ -377,4 +362,5 @@
           width:160px;
           position: relative;
           top: 0.4cm; 
+          border-radius: 20px;
         }
