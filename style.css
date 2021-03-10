@@ -125,15 +125,15 @@
          
          .color{
           width: 6.7cm;
-           height: 13cm;
-           background-color:#FFFEFC;
-           border: black ;
-           border-style: solid;
-           position: relative;
-           left: 32cm;
-           text-align: center; 
-           bottom: 28.2cm;
-           border-radius: 50px;
+          height: 13cm;
+          background-color:#FFFEFC;
+          border: black ;
+          border-style: solid;
+          position: relative;
+          left: 32cm;
+          text-align: center; 
+          bottom: 28.2cm;
+          border-radius: 50px;
          }
 
          /* tag design */
@@ -277,7 +277,6 @@
         .shape2{
           position: relative;
           top: 1.3cm;
-          background-color: black;
         }
         .art0{
           width: 15cm;
@@ -357,10 +356,27 @@
           bottom: 18.6cm;
           left: 12.5cm;
         }
-        .firstart{
+        .firstart,.secondart{
           height:160px;
           width:160px;
           position: relative;
           top: 0.4cm; 
           border-radius: 20px;
         }
+        .secondart1,.secondart2,.secondart3,.secondart4{
+          position: relative;
+        } 
+        .secondart5{
+         border-radius: 0px 0px 200px 200px;
+         position: relative;
+        }
+        .secondart6{
+         border-radius: 30px;
+         position: relative;
+        }
+        .secondart7{
+          border-radius: 40px;
+          position: relative;
+        }
+        
+
