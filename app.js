@@ -83,24 +83,60 @@ var array1 = [secondart1,secondart2,secondart3,secondart4,secondart5,secondart6,
 firstart.addEventListener(`click`,()=>{
     for (let index = 0; index < array.length; index++) {
         const element = array[index];
-        if (element == art9) {
-            element.style.border= "white";
-            element.style.borderStyle = "solid";
+        element.style.border= "white";
+        element.style.borderStyle = "solid";
+        element.style.backgroundColor = "#404040";
+        if (element == art1) {
+            element.style.width = "1.3cm";
+            element.style.height= "1.3cm";
+            element.style.bottom = "5.2cm";
+            element.style.left= "1.04cm";
+        } else if(element == art2){
+            element.style.width = "1.3cm";
+            element.style.height= "1.3cm";
+            element.style.bottom = "6.63cm";
+            element.style.left= "17.46cm";
+        } else if(element == art3){
+            element.style.width = "7cm";
+            element.style.height= "1cm";
+            element.style.bottom = "2.3cm";
+            element.style.left= "8cm";
+        } else if(element == art4){
+            element.style.width = "4cm";
+            element.style.height= "0.4cm";
+            element.style.bottom = "4.2cm";
+            element.style.left= "9.53cm";
+        } else if(element == art5){
+            element.style.width = "0.5cm";
+            element.style.height= "4cm";
+            element.style.bottom = "10cm";
+            element.style.left= "9.5cm";
+        } else if(element == art6){
+            element.style.width = "1.5cm";
+            element.style.height= "1.5cm";
+            element.style.bottom = "11cm";
+            element.style.left= "9.75cm";
+        } else if(element == art7){
+            element.style.width = "2cm";
+            element.style.height= "2cm";
+            element.style.bottom = "16.5cm";
+            element.style.left= "5cm";
+        } else if(element == art8){
+            element.style.width = "2cm";
+            element.style.height= "2cm";
+            element.style.bottom = "18.6cm";
+            element.style.left= "12.5cm";
+        } else if(element == art9){
+            element.style.width = "1.5cm";
+            element.style.height= "1.5cm";
             element.style.bottom = "23.7cm";
             element.style.left= "10.4cm";
-            element.style.backgroundColor = "#404040";
-        } else if(element == art10){
-            element.style.border= "white";
-            element.style.borderStyle = "solid";
+        } else if (element == art10) {
+            element.style.width = "1.5cm";
+            element.style.height= "1.5cm";
             element.style.bottom = "25.32cm";
             element.style.left= "7.5cm";
-            element.style.backgroundColor = "#404040";
-        } else{
-            element.style.border= "white";
-            element.style.borderStyle = "solid";
-            element.style.backgroundColor = "#404040";
-        }
-        
+        }   
     };
 
     for (let index = 0; index < array1.length; index++) {
@@ -158,19 +194,59 @@ firstart.addEventListener(`click`,()=>{
 shape2.addEventListener(`click`,()=>{
     for (let index = 0; index < array.length; index++) {
         const element = array[index];
-        if (element == art9) {
-               element.style.backgroundColor = "#404040";
-               element.style.border = "#404040";
-               element.style.bottom = "23cm"
-               element.style.left= "10.4cm"
-        } else if(element == art10){
-                element.style.backgroundColor = "#404040";
-                element.style.border = "#404040";
-                element.style.bottom = "23cm"
-                element.style.left= "10.4cm"
-        } else {
-                element.style.backgroundColor = "#404040";
-                element.style.border = "#404040";   
+        element.style.border= "#404040";
+        element.style.borderStyle = "solid";
+        element.style.backgroundColor = "#404040";
+        if (element == art1) {
+            element.style.width = "0.2cm";
+            element.style.height= "0.2cm";
+            element.style.bottom = "15.2cm";
+            element.style.left= "1.04cm";
+        } else if(element == art2){
+            element.style.width = "0.2cm";
+            element.style.height= "0.2cm";
+            element.style.bottom = "26.63cm";
+            element.style.left= "17.46cm";
+        } else if(element == art3){
+            element.style.width = "0.2cm";
+            element.style.height= "0.1cm";
+            element.style.bottom = "22.3cm";
+            element.style.left= "8cm";
+        } else if(element == art4){
+            element.style.width = "0.4cm";
+            element.style.height= "0.1cm";
+            element.style.bottom = "24.2cm";
+            element.style.left= "9.53cm";
+        } else if(element == art5){
+            element.style.width = "0.4cm";
+            element.style.height= "0.1cm";
+            element.style.bottom = "30cm";
+            element.style.left= "9.5cm";
+        } else if(element == art6){
+            element.style.width = "0.1cm";
+            element.style.height= "0.1cm";
+            element.style.bottom = "31cm";
+            element.style.left= "9.75cm";
+        } else if(element == art7){
+            element.style.width = "0.2cm";
+            element.style.height= "0.2cm";
+            element.style.bottom = "26.5cm";
+            element.style.left= "5cm";
+        } else if(element == art8){
+            element.style.width = "0.2cm";
+            element.style.height= "0.2cm";
+            element.style.bottom = "28.6cm";
+            element.style.left= "12.5cm";
+        } else if(element == art9){
+            element.style.width = "0.1cm";
+            element.style.height= "0.1cm";
+            element.style.bottom = "23.7cm";
+            element.style.left= "10.4cm";
+        } else if (element == art10) {
+            element.style.width = "1.5cm";
+            element.style.height= "1.5cm";
+            element.style.bottom = "25.32cm";
+            element.style.left= "7.5cm";
         }
     };
 
@@ -179,47 +255,48 @@ shape2.addEventListener(`click`,()=>{
             element.style.border = "white";
             element.style.borderStyle = "solid";
             element.style.backgroundColor = "#404040";
+
             if (element == secondart1) {
                 element.style.width = "0.5cm"
                 element.style.height = "4cm"
-                element.style.bottom = "18cm"
-                element.style.left = "8cm"
+                element.style.bottom = "6cm"
+                element.style.left = "8.5cm"
 
             } else if(element == secondart2){
                 element.style.width = "0.5cm"
                 element.style.height = "4cm"
-                element.style.bottom = "22.12cm"
-                element.style.left = "9cm"
+                element.style.bottom = "10.12cm"
+                element.style.left = "9.5cm"
 
             } else if(element == secondart3){
                 element.style.width ="0.5cm"
                 element.style.height ="4cm"
-                element.style.bottom ="26.26cm"
-                element.style.left = "10cm" 
+                element.style.bottom ="14.26cm"
+                element.style.left = "10.5cm" 
             }
              else if(element == secondart4){
                 element.style.width = "0.5cm"
                 element.style.height = "4cm"
-                element.style.bottom = "30.38cm"
-                element.style.left = "11cm" 
+                element.style.bottom = "18.38cm"
+                element.style.left = "11.5cm" 
             }
-             else if(element == secondart5){
+             if(element == secondart5){
                 element.style.width = "4cm"
                 element.style.height = "2cm"
-                element.style.bottom = "38.4cm"
-                element.style.left = "7.8cm" 
+                element.style.bottom = "26.4cm"
+                element.style.left = "8.25cm" 
             }
              else if(element == secondart6){
                 element.style.width = "0.8cm"
                 element.style.height = "0.8cm"
-                element.style.bottom = "38cm"
-                element.style.left = "9.4cm" 
+                element.style.bottom = "26cm"
+                element.style.left = "9.85cm" 
             }
             else if(element == secondart7){
                 element.style.width = "1.5cm"
                 element.style.height = "1.5cm"
-                element.style.bottom = "43.6cm"
-                element.style.left = "9.1cm" 
+                element.style.bottom = "31.6cm"
+                element.style.left = "9.5cm" 
             }
     }
 });

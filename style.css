@@ -285,98 +285,39 @@
           top: 2.5cm;
           left: 2.4cm;
         }
-        .art1,.art2{
-          width: 1.3cm;
-          height: 1.3cm;
-        }
-        .art1{
+        .art1,.art2,.art3,.art4,.art5,.art6,.art7,.art8,.art9,.art10{
           position: relative;
-          bottom: 5.2cm;
-          left: 1.04cm;
-        }
-        .art2{
-          position: relative;
-          bottom: 6.63cm;
-          left: 17.46cm;
-        }
-        .art3{
-          width: 7cm;
-          height: 1cm;
-          position: relative;
-          bottom: 2.3cm;
-          left: 8cm;
-        }
-        .art4{
-          width: 4cm;
-          height:0.4cm;
-          position: relative;
-          bottom: 4.2cm;
-          left: 9.53cm;
-        }
-        .art5{
-          height:4cm;
-          width: 0.5cm;
-          position: relative;
-          bottom: 10cm;
-          left: 9.5cm;
-        }
-        .art6{
-          height:1.5cm;
-          width: 1.5cm;
+          cursor: pointer;
+        }  
+        .art6,.art7,.art8,.art9,.art10{
           border-radius: 50px;
-          position: relative;
-          bottom: 11cm;
-          left: 9.75cm;
-        }
-        .art7,.art8{
-           height: 2cm;
-           width: 2cm;
-           border-radius: 50px;
-        }
-        .art9,.art10{
-          height: 1.5cm;
-          width: 1.5cm;
-          border-radius: 50px;
-          position: relative;
-          bottom: 25.32cm;
-          left: 7.5cm;
-        }
-        .art9{
-          position: relative;
-          bottom:23.7cm;
-          left: 10.4cm;
-        }
-        .art7{
-          position: relative;
-          bottom: 16.5cm;
-          left: 5cm;
-        }
-        .art8{
-          position: relative;
-          bottom: 18.6cm;
-          left: 12.5cm;
         }
         .firstart,.secondart{
           height:160px;
           width:160px;
+          cursor: pointer;
           position: relative;
           top: 0.4cm; 
           border-radius: 20px;
         }
         .secondart1,.secondart2,.secondart3,.secondart4{
           position: relative;
+          cursor: pointer;
         } 
         .secondart5{
          border-radius: 0px 0px 200px 200px;
          position: relative;
+         cursor: pointer;
         }
         .secondart6{
          border-radius: 30px;
          position: relative;
+         cursor: pointer;
         }
         .secondart7{
           border-radius: 40px;
           position: relative;
+          cursor: pointer;
         }
         
 
