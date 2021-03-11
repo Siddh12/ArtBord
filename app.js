@@ -338,21 +338,120 @@ function colorfiller(params) {
     });
 };
 
+
+// color generator
+
+
+var conditionforfirst = true;
+var conditionforsecond = true;
+var conditionforthird = true;
+var conditionforforth = true;
+var conditionforfifth = true;
+var conditionforsixth = true;
+
+var lock1 = document.querySelector(".lock1");
+var lock2 = document.querySelector(".lock2");
+var lock3 = document.querySelector(".lock3");
+var lock4 = document.querySelector(".lock4");
+var lock5 = document.querySelector(".lock5");
+var lock6 = document.querySelector(".lock6");
+
+lock1.addEventListener(`click`,()=>{  
+
+    if (conditionforfirst == true) {
+        conditionforfirst = false;
+        lock1.style.backgroundColor= "#EFAA3A";
+    } else {
+        conditionforfirst = true;
+        lock1.style.backgroundColor= "white";
+    }; 
+
+});lock2.addEventListener(`click`,()=>{  
+    
+    if (conditionforsecond == true) {
+        conditionforsecond = false;
+        lock2.style.backgroundColor= "#EFAA3A";
+    } else {
+        conditionforsecond = true;
+        lock2.style.backgroundColor= "white";
+    }; 
+});lock3.addEventListener(`click`,()=>{  
+    
+    if (conditionforthird == true) {
+        conditionforthird = false;
+        lock3.style.backgroundColor= "#EFAA3A";
+    } else {
+        conditionforthird = true;
+        lock3.style.backgroundColor= "white";
+    }; 
+});lock4.addEventListener(`click`,()=>{  
+    
+    if (conditionforforth == true) {
+        conditionforforth = false;
+        lock4.style.backgroundColor= "#EFAA3A";
+    } else {
+        conditionforforth = true;
+        lock4.style.backgroundColor= "white";
+    }; 
+});lock5.addEventListener(`click`,()=>{  
+    
+    if (conditionforfifth == true) {
+        conditionforfifth = false;
+        lock5.style.backgroundColor= "#EFAA3A";
+    } else {
+        conditionforfifth = true;
+        lock5.style.backgroundColor= "white";
+    }; 
+});
+lock6.addEventListener(`click`,()=>{  
+    
+    if (conditionforsixth == true) {
+        conditionforsixth = false;
+        lock6.style.backgroundColor= "#EFAA3A";
+    } else {
+        conditionforsixth = true;
+        lock6.style.backgroundColor= "white";
+    }; 
+});
+
+
 color7.addEventListener(`click`,()=>{
     moreclick(color7);
-    var colorcode1 = Math.round(856635*Math.random());
-    var colorcode2 = Math.round(856615*Math.random());
-    var colorcode3 = Math.round(857625*Math.random());
-    var colorcode4 = Math.round(556655*Math.random());
-    var colorcode5 = Math.round(856663*Math.random());
-    var colorcode6 = Math.round(859675*Math.random());
-    color1.style.backgroundColor = "#"+colorcode1.toString();
-    color2.style.backgroundColor = "#"+colorcode2.toString();
-    color3.style.backgroundColor = "#"+colorcode3.toString();
-    color4.style.backgroundColor = "#"+colorcode4.toString();
-    color5.style.backgroundColor = "#"+colorcode5.toString();
-    color6.style.backgroundColor = "#"+colorcode6.toString();
+    if (conditionforfirst) {
+        var colorcode1 = Math.round(856635*Math.random());
+        color1.style.backgroundColor = "#"+colorcode1.toString();
+    };
+
+    if (conditionforsecond) {
+        var colorcode2 = Math.round(856615*Math.random());
+        color2.style.backgroundColor = "#"+colorcode2.toString(); 
+    };
+
+    if (conditionforthird) {     
+        var colorcode3 = Math.round(857625*Math.random());
+        color3.style.backgroundColor = "#"+colorcode3.toString();
+    };
+
+    if (conditionforforth) {
+        var colorcode4 = Math.round(556655*Math.random());
+        color4.style.backgroundColor = "#"+colorcode4.toString();
+    };
+
+    if (conditionforfifth) {
+        var colorcode5 = Math.round(856663*Math.random());
+        color5.style.backgroundColor = "#"+colorcode5.toString();
+    };
+
+    if (conditionforsixth) {
+        var colorcode6 = Math.round(859675*Math.random());
+        color6.style.backgroundColor = "#"+colorcode6.toString();
+    };   
 });
+
+
+// click Animation
+
+
 moreshape.addEventListener(`click`,()=>{moreclick(moreshape)});
 
    function moreclick(element){
@@ -363,4 +462,4 @@ moreshape.addEventListener(`click`,()=>{moreclick(moreshape)});
     element.style.color= "Black";
    },150)  
    };
-
+   

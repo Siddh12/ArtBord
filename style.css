@@ -162,7 +162,7 @@
         }
         .color7{
           position: relative;
-          top: 4.3cm;
+          bottom: 2.5cm;
           left: 2.1cm;
         }
         .moreshape{
@@ -277,4 +277,37 @@
           border-radius: 40px;
           position: relative;
           cursor: pointer;
+        }
+        .lock1,.lock2,.lock3,.lock4,.lock5,.lock6{
+          width: 1cm;
+          height: 1cm;
+          border: navy;
+          border-style: solid;
+          border-radius: 40px;
+          position: relative;
+          left: 5.4cm;
+          bottom: 6.36cm;
+          background-color: white;
+        }
+        .lock2{
+           bottom:5.65cm;
+        }
+        .lock3{
+           bottom:4.94cm;
+        }
+        .lock4{
+           bottom:4.3cm;
+        }
+        .lock5{
+           bottom:3.6cm;
+        }
+        .lock6{
+           bottom:2.8cm; 
+        }
+        .lockimage1{
+          height: 0.5cm;
+          width: 0.3cm;
+          cursor: pointer;
+          position: relative;
+          top: 0.2cm;
         }
