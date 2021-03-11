@@ -28,7 +28,9 @@ var color3 = document.querySelector(".color3");
 var color4 = document.querySelector(".color4");
 var color5 = document.querySelector(".color5");
 var color6 = document.querySelector(".color6");
+var color7 = document.querySelector(".color7");
 var shape2 = document.querySelector(".shape2");
+var moreshape = document.querySelector(".moreshape");
 
 var array =[art0,art1,art2,art3,art4,art5,art6,art7,art8,art9,art10,];
 var array1 = [secondart1,secondart2,secondart3,secondart4,secondart5,secondart6,secondart7];
@@ -335,3 +337,30 @@ function colorfiller(params) {
         fillincolor.style.backgroundColor = window.getComputedStyle(color6).backgroundColor; 
     });
 };
+
+color7.addEventListener(`click`,()=>{
+    moreclick(color7);
+    var colorcode1 = Math.round(856635*Math.random());
+    var colorcode2 = Math.round(856615*Math.random());
+    var colorcode3 = Math.round(857625*Math.random());
+    var colorcode4 = Math.round(556655*Math.random());
+    var colorcode5 = Math.round(856663*Math.random());
+    var colorcode6 = Math.round(859675*Math.random());
+    color1.style.backgroundColor = "#"+colorcode1.toString();
+    color2.style.backgroundColor = "#"+colorcode2.toString();
+    color3.style.backgroundColor = "#"+colorcode3.toString();
+    color4.style.backgroundColor = "#"+colorcode4.toString();
+    color5.style.backgroundColor = "#"+colorcode5.toString();
+    color6.style.backgroundColor = "#"+colorcode6.toString();
+});
+moreshape.addEventListener(`click`,()=>{moreclick(moreshape)});
+
+   function moreclick(element){
+    element.style.backgroundColor= "#3A5444";
+    element.style.color= "white";
+   setTimeout(()=>{
+    element.style.backgroundColor= "White";
+    element.style.color= "Black";
+   },150)  
+   };
+
