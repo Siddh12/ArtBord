@@ -1,100 +1,72 @@
 var fillincolor;
-var art0 = document.querySelector(".art0");
-var art1 = document.querySelector(".art1");
-var art2 = document.querySelector(".art2");
-var art3 = document.querySelector(".art3");
-var art4 = document.querySelector(".art4");
-var art5 = document.querySelector(".art5");
-var art6 = document.querySelector(".art6");
-var art7 = document.querySelector(".art7");
-var art8 = document.querySelector(".art8");
-var art9 = document.querySelector(".art9");
-var art10 = document.querySelector(".art10");
 
-// const art1Array = [".art0",".art1",".art2",".art3",".art4",".art5",".art6",".art7",".art8",".art9",".art10"];
-//       art1Array.map(id=>document.querySelector(id))
-//               .forEach((element)=>element.addEventListener(`click`,(e)=> colorfiller(e.target)));
+const art1Array = [".art0",".art1",".art2",".art3",".art4",".art5",".art6",".art7",".art8",".art9",".art10"];
+let manupulatearray1 = art1Array.map(id=>document.querySelector(id));
+manupulatearray1.forEach((element)=>element.addEventListener(`click`,(e)=> colorfiller(e.target)));
 
+const art2array = [".secondart1",".secondart2",".secondart3",".secondart4",".secondart5",".secondart6",".secondart7"];
+let manupulatearray2 = art2array.map(id=>document.querySelector(id));
+manupulatearray2.forEach((element)=>element.addEventListener(`click`,(e)=> colorfiller(e.target)));
 
 var firstart = document.querySelector(".firstart");
-
-
-var secondart1 = document.querySelector(".secondart1");
-var secondart2 = document.querySelector(".secondart2");
-var secondart3 = document.querySelector(".secondart3");
-var secondart4 = document.querySelector(".secondart4");
-var secondart5 = document.querySelector(".secondart5");
-var secondart6 = document.querySelector(".secondart6");
-var secondart7 = document.querySelector(".secondart7");
-
-
-var color1 = document.querySelector(".color1");
-var color2 = document.querySelector(".color2");
-var color3 = document.querySelector(".color3");
-var color4 = document.querySelector(".color4");
-var color5 = document.querySelector(".color5");
-var color6 = document.querySelector(".color6");
-var color7 = document.querySelector(".color7");
 var shape2 = document.querySelector(".shape2");
 
-var array =[art0,art1,art2,art3,art4,art5,art6,art7,art8,art9,art10,];
-var array1 = [secondart1,secondart2,secondart3,secondart4,secondart5,secondart6,secondart7];
- 
+
 // for frist art
 
 
 firstart.addEventListener(`click`,()=>{
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
+    for (let index = 0; index < manupulatearray1.length; index++) {
+        const element = manupulatearray1[index];
         element.style.border= "white";
         element.style.borderStyle = "solid";
         element.style.backgroundColor = "#404040";
-        if (element == art1) {
+        if (element == manupulatearray1[1]) {
             element.style.width = "1.3cm";
             element.style.height= "1.3cm";
             element.style.bottom = "5.2cm";
             element.style.left= "1.04cm";
-        } else if(element == art2){
+        } else if(element == manupulatearray1[2]){
             element.style.width = "1.3cm";
             element.style.height= "1.3cm";
             element.style.bottom = "6.63cm";
             element.style.left= "17.46cm";
-        } else if(element == art3){
+        } else if(element == manupulatearray1[3]){
             element.style.width = "7cm";
             element.style.height= "1cm";
             element.style.bottom = "2.3cm";
             element.style.left= "8cm";
-        } else if(element == art4){
+        } else if(element == manupulatearray1[4]){
             element.style.width = "4cm";
             element.style.height= "0.4cm";
             element.style.bottom = "4.2cm";
             element.style.left= "9.53cm";
-        } else if(element == art5){
+        } else if(element == manupulatearray1[5]){
             element.style.width = "0.5cm";
             element.style.height= "4cm";
             element.style.bottom = "10cm";
             element.style.left= "9.5cm";
-        } else if(element == art6){
+        } else if(element == manupulatearray1[6]){
             element.style.width = "1.5cm";
             element.style.height= "1.5cm";
             element.style.bottom = "11cm";
             element.style.left= "9.75cm";
-        } else if(element == art7){
+        } else if(element == manupulatearray1[7]){
             element.style.width = "2cm";
             element.style.height= "2cm";
             element.style.bottom = "16.5cm";
             element.style.left= "5cm";
-        } else if(element == art8){
+        } else if(element == manupulatearray1[8]){
             element.style.width = "2cm";
             element.style.height= "2cm";
             element.style.bottom = "18.6cm";
             element.style.left= "12.5cm";
-        } else if(element == art9){
+        } else if(element == manupulatearray1[9]){
             element.style.width = "1.5cm";
             element.style.height= "1.5cm";
             element.style.bottom = "23.7cm";
             element.style.left= "10.4cm";
-        } else if (element == art10) {
+        } else if (element == manupulatearray1[10]) {
             element.style.width = "1.5cm";
             element.style.height= "1.5cm";
             element.style.bottom = "25.32cm";
@@ -102,47 +74,47 @@ firstart.addEventListener(`click`,()=>{
         }   
     };
 
-    for (let index = 0; index < array1.length; index++) {
-        const element = array1[index];
+    for (let index = 0; index < manupulatearray2.length; index++) {
+        const element = manupulatearray2[index];
             element.style.border = "#404040";
             element.style.borderStyle = "solid";
-            if (element == secondart1) {
-                element.style.width = "0.1cm"
-                element.style.height = "0.3cm"
-                element.style.bottom = "15cm"
+            if (element == manupulatearray2[0]) {
+                element.style.width = "1.5cm"
+                element.style.height = "1.5cm"
+                element.style.bottom = "35cm"
                 element.style.left = "8cm"
 
-            } else if(element == secondart2){
+            } else if(element == manupulatearray2[1]){
                 element.style.width = "0.1cm"
                 element.style.height = "0.3cm"
-                element.style.bottom = "14.4cm"
+                element.style.bottom = "44.4cm"
                 element.style.left = "8.5cm"
 
-            } else if(element == secondart3){
+            } else if(element == manupulatearray2[2]){
                 element.style.width ="0.1cm"
                 element.style.height ="0.3cm"
-                element.style.bottom ="15.8cm"
+                element.style.bottom ="45.8cm"
                 element.style.left = "9cm" 
             }
-             else if(element == secondart4){
+             else if(element == manupulatearray2[3]){
                 element.style.width = "0.1cm"
                 element.style.height = "0.3cm"
-                element.style.bottom = "15.3cm"
+                element.style.bottom = "45.3cm"
                 element.style.left = "9.5cm" 
             }
-             else if(element == secondart5){
+             else if(element == manupulatearray2[4]){
                 element.style.width = "4cm"
                 element.style.height = "2cm"
                 element.style.bottom = "38.4cm"
                 element.style.left = "7.8cm" 
             }
-             else if(element == secondart6){
+             else if(element == manupulatearray2[5]){
                 element.style.width = "0.8cm"
                 element.style.height = "0.8cm"
-                element.style.bottom = "38cm"
+                element.style.bottom = "48cm"
                 element.style.left = "9.4cm" 
             }
-            else if(element == secondart7){
+            else if(element == manupulatearray2[6]){
                 element.style.width = "1.5cm"
                 element.style.height = "1.5cm"
                 element.style.bottom = "43.6cm"
@@ -155,57 +127,57 @@ firstart.addEventListener(`click`,()=>{
 // for second art
 
 shape2.addEventListener(`click`,()=>{
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
+    for (let index = 0; index < manupulatearray1.length; index++) {
+        const element = manupulatearray1[index];
         element.style.border= "#404040";
         element.style.borderStyle = "solid";
         element.style.backgroundColor = "#404040";
-        if (element == art1) {
+        if (element == manupulatearray1[1]) {
             element.style.width = "0.2cm";
             element.style.height= "0.2cm";
             element.style.bottom = "15.2cm";
             element.style.left= "1.04cm";
-        } else if(element == art2){
+        } else if(element == manupulatearray1[2]){
             element.style.width = "0.2cm";
             element.style.height= "0.2cm";
             element.style.bottom = "26.63cm";
             element.style.left= "17.46cm";
-        } else if(element == art3){
+        } else if(element == manupulatearray1[3]){
             element.style.width = "0.2cm";
             element.style.height= "0.1cm";
             element.style.bottom = "22.3cm";
             element.style.left= "8cm";
-        } else if(element == art4){
+        } else if(element == manupulatearray1[4]){
             element.style.width = "0.4cm";
             element.style.height= "0.1cm";
             element.style.bottom = "24.2cm";
             element.style.left= "9.53cm";
-        } else if(element == art5){
+        } else if(element == manupulatearray1[5]){
             element.style.width = "0.4cm";
             element.style.height= "0.1cm";
             element.style.bottom = "30cm";
             element.style.left= "9.5cm";
-        } else if(element == art6){
+        } else if(element == manupulatearray1[6]){
             element.style.width = "0.1cm";
             element.style.height= "0.1cm";
             element.style.bottom = "31cm";
             element.style.left= "9.75cm";
-        } else if(element == art7){
+        } else if(element == manupulatearray1[7]){
             element.style.width = "0.2cm";
             element.style.height= "0.2cm";
             element.style.bottom = "26.5cm";
             element.style.left= "5cm";
-        } else if(element == art8){
+        } else if(element == manupulatearray1[8]){
             element.style.width = "0.2cm";
             element.style.height= "0.2cm";
             element.style.bottom = "28.6cm";
             element.style.left= "12.5cm";
-        } else if(element == art9){
+        } else if(element == manupulatearray1[9]){
             element.style.width = "0.1cm";
             element.style.height= "0.1cm";
             element.style.bottom = "23.7cm";
             element.style.left= "10.4cm";
-        } else if (element == art10) {
+        } else if (element == manupulatearray1[10]) {
             element.style.width = "1.5cm";
             element.style.height= "1.5cm";
             element.style.bottom = "25.32cm";
@@ -213,49 +185,49 @@ shape2.addEventListener(`click`,()=>{
         }
     };
 
-    for (let index = 0; index < array1.length; index++) {
-        const element = array1[index];
+    for (let index = 0; index < manupulatearray2.length; index++) {
+        const element = manupulatearray2[index];
             element.style.border = "white";
             element.style.borderStyle = "solid";
             element.style.backgroundColor = "#404040";
 
-            if (element == secondart1) {
+            if (element == manupulatearray2[0]) {
                 element.style.width = "0.5cm"
                 element.style.height = "4cm"
                 element.style.bottom = "6cm"
                 element.style.left = "8.5cm"
 
-            } else if(element == secondart2){
+            } else if(element == manupulatearray2[1]){
                 element.style.width = "0.5cm"
                 element.style.height = "4cm"
                 element.style.bottom = "10.12cm"
                 element.style.left = "9.5cm"
 
-            } else if(element == secondart3){
+            } else if(element == manupulatearray2[2]){
                 element.style.width ="0.5cm"
                 element.style.height ="4cm"
                 element.style.bottom ="14.26cm"
                 element.style.left = "10.5cm" 
             }
-             else if(element == secondart4){
+             else if(element == manupulatearray2[3]){
                 element.style.width = "0.5cm"
                 element.style.height = "4cm"
                 element.style.bottom = "18.38cm"
                 element.style.left = "11.5cm" 
             }
-             if(element == secondart5){
+             if(element == manupulatearray2[4]){
                 element.style.width = "4cm"
                 element.style.height = "2cm"
                 element.style.bottom = "26.4cm"
                 element.style.left = "8.25cm" 
             }
-             else if(element == secondart6){
+             else if(element == manupulatearray2[5]){
                 element.style.width = "0.8cm"
                 element.style.height = "0.8cm"
                 element.style.bottom = "26cm"
                 element.style.left = "9.85cm" 
             }
-            else if(element == secondart7){
+            else if(element == manupulatearray2[6]){
                 element.style.width = "1.5cm"
                 element.style.height = "1.5cm"
                 element.style.bottom = "31.6cm"
@@ -264,84 +236,17 @@ shape2.addEventListener(`click`,()=>{
     }
 });
 
-// for box selection
- 
-secondart1.addEventListener(`click`,()=>{
-    colorfiller(secondart1)
-});
-secondart2.addEventListener(`click`,()=>{
-    colorfiller(secondart2)
-});
-secondart3.addEventListener(`click`,()=>{
-    colorfiller(secondart3)
-});
-secondart4.addEventListener(`click`,()=>{
-    colorfiller(secondart4)
-});
-secondart5.addEventListener(`click`,()=>{
-    colorfiller(secondart5)
-});
-secondart6.addEventListener(`click`,()=>{
-    colorfiller(secondart6)
-});
-secondart7.addEventListener(`click`,()=>{
-    colorfiller(secondart7)
-});
-
-art1.addEventListener(`click`,()=>{
-    colorfiller(art1);
-});
-art2.addEventListener(`click`,()=>{
-    colorfiller(art2);
-});
-art3.addEventListener(`click`,()=>{
-    colorfiller(art3);
-});
-art4.addEventListener(`click`,()=>{
-    colorfiller(art4);
-});
-art5.addEventListener(`click`,()=>{
-    colorfiller(art5)
-});
-art6.addEventListener(`click`,()=>{
-    colorfiller(art6) 
-});
-art7.addEventListener(`click`,()=>{
-    colorfiller(art7);
-});
-art8.addEventListener(`click`,()=>{
-    colorfiller(art8);
-});
-art9.addEventListener(`click`,()=>{
-    colorfiller(art9);
-});
-art10.addEventListener(`click`,()=>{
-    colorfiller(art10);
-});
 
 // function for color fill
 
+const colorarray = [".color1",".color2",".color3",".color4",".color5",".color6"];
+let colorarraymanupulate = colorarray.map((id)=>document.querySelector(id));
 function colorfiller(params){
-    // console.log("siddh");
     fillincolor = params;
-    color1.addEventListener(`mouseenter`,()=>{
-        fillincolor.style.backgroundColor = window.getComputedStyle(color1).backgroundColor; 
-    });
-    color2.addEventListener(`mouseenter`,()=>{
-        fillincolor.style.backgroundColor = window.getComputedStyle(color2).backgroundColor; 
-    });
-    color3.addEventListener(`mouseenter`,()=>{
-        fillincolor.style.backgroundColor = window.getComputedStyle(color3).backgroundColor; 
-    });
-    color4.addEventListener(`mouseenter`,()=>{
-        fillincolor.style.backgroundColor = window.getComputedStyle(color4).backgroundColor; 
-    });
-    color5.addEventListener(`mouseenter`,()=>{
-        fillincolor.style.backgroundColor = window.getComputedStyle(color5).backgroundColor; 
-    });
-    color6.addEventListener(`mouseenter`,()=>{
-        fillincolor.style.backgroundColor = window.getComputedStyle(color6).backgroundColor; 
-    });
+ 
+ colorarraymanupulate.forEach((element)=>{element.addEventListener(`mouseenter`,(e)=>{
+                fillincolor.style.backgroundColor = window.getComputedStyle(e.target).backgroundColor;  
+ })})
 };
 
 
@@ -420,37 +325,40 @@ lock6.addEventListener(`click`,()=>{
     }; 
 });
 
+var color7 = document.querySelector(".color7")
 
 color7.addEventListener(`click`,()=>{
     moreclick(color7);
+
+    
     if (conditionforfirst) {
         var colorcode1 = Math.round(856635*Math.random());
-        color1.style.backgroundColor = "#"+colorcode1.toString();
+        colorarraymanupulate[0].style.backgroundColor = "#"+colorcode1.toString();
     };
 
     if (conditionforsecond) {
         var colorcode2 = Math.round(856615*Math.random());
-        color2.style.backgroundColor = "#"+colorcode2.toString(); 
+        colorarraymanupulate[1].style.backgroundColor = "#"+colorcode2.toString(); 
     };
 
     if (conditionforthird) {     
         var colorcode3 = Math.round(857625*Math.random());
-        color3.style.backgroundColor = "#"+colorcode3.toString();
+        colorarraymanupulate[2].style.backgroundColor = "#"+colorcode3.toString();
     };
 
     if (conditionforforth) {
         var colorcode4 = Math.round(556655*Math.random());
-        color4.style.backgroundColor = "#"+colorcode4.toString();
+        colorarraymanupulate[3].style.backgroundColor = "#"+colorcode4.toString();
     };
 
     if (conditionforfifth) {
         var colorcode5 = Math.round(856663*Math.random());
-        color5.style.backgroundColor = "#"+colorcode5.toString();
+        colorarraymanupulate[4].style.backgroundColor = "#"+colorcode5.toString();
     };
 
     if (conditionforsixth) {
         var colorcode6 = Math.round(859675*Math.random());
-        color6.style.backgroundColor = "#"+colorcode6.toString();
+        colorarraymanupulate[5].style.backgroundColor = "#"+colorcode6.toString();
     };   
 });
 
