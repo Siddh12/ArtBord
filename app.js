@@ -10,6 +10,12 @@ var art7 = document.querySelector(".art7");
 var art8 = document.querySelector(".art8");
 var art9 = document.querySelector(".art9");
 var art10 = document.querySelector(".art10");
+
+// const art1Array = [".art0",".art1",".art2",".art3",".art4",".art5",".art6",".art7",".art8",".art9",".art10"];
+//       art1Array.map(id=>document.querySelector(id))
+//               .forEach((element)=>element.addEventListener(`click`,(e)=> colorfiller(e.target)));
+
+
 var firstart = document.querySelector(".firstart");
 
 
@@ -30,7 +36,6 @@ var color5 = document.querySelector(".color5");
 var color6 = document.querySelector(".color6");
 var color7 = document.querySelector(".color7");
 var shape2 = document.querySelector(".shape2");
-var moreshape = document.querySelector(".moreshape");
 
 var array =[art0,art1,art2,art3,art4,art5,art6,art7,art8,art9,art10,];
 var array1 = [secondart1,secondart2,secondart3,secondart4,secondart5,secondart6,secondart7];
@@ -296,7 +301,7 @@ art4.addEventListener(`click`,()=>{
     colorfiller(art4);
 });
 art5.addEventListener(`click`,()=>{
-    colorfiller(art5) 
+    colorfiller(art5)
 });
 art6.addEventListener(`click`,()=>{
     colorfiller(art6) 
@@ -316,7 +321,8 @@ art10.addEventListener(`click`,()=>{
 
 // function for color fill
 
-function colorfiller(params) {
+function colorfiller(params){
+    // console.log("siddh");
     fillincolor = params;
     color1.addEventListener(`mouseenter`,()=>{
         fillincolor.style.backgroundColor = window.getComputedStyle(color1).backgroundColor; 
@@ -363,7 +369,7 @@ lock1.addEventListener(`click`,()=>{
         lock1.style.backgroundColor= "#EFAA3A";
     } else {
         conditionforfirst = true;
-        lock1.style.backgroundColor= "white";
+        lock1.style.backgroundColor= "#E8D8A4";
     }; 
 
 });lock2.addEventListener(`click`,()=>{  
@@ -373,7 +379,7 @@ lock1.addEventListener(`click`,()=>{
         lock2.style.backgroundColor= "#EFAA3A";
     } else {
         conditionforsecond = true;
-        lock2.style.backgroundColor= "white";
+        lock2.style.backgroundColor= "#E8D8A4";
     }; 
 });lock3.addEventListener(`click`,()=>{  
     
@@ -382,7 +388,7 @@ lock1.addEventListener(`click`,()=>{
         lock3.style.backgroundColor= "#EFAA3A";
     } else {
         conditionforthird = true;
-        lock3.style.backgroundColor= "white";
+        lock3.style.backgroundColor= "#E8D8A4";
     }; 
 });lock4.addEventListener(`click`,()=>{  
     
@@ -391,7 +397,7 @@ lock1.addEventListener(`click`,()=>{
         lock4.style.backgroundColor= "#EFAA3A";
     } else {
         conditionforforth = true;
-        lock4.style.backgroundColor= "white";
+        lock4.style.backgroundColor= "#E8D8A4";
     }; 
 });lock5.addEventListener(`click`,()=>{  
     
@@ -400,7 +406,7 @@ lock1.addEventListener(`click`,()=>{
         lock5.style.backgroundColor= "#EFAA3A";
     } else {
         conditionforfifth = true;
-        lock5.style.backgroundColor= "white";
+        lock5.style.backgroundColor= "#E8D8A4";
     }; 
 });
 lock6.addEventListener(`click`,()=>{  
@@ -410,7 +416,7 @@ lock6.addEventListener(`click`,()=>{
         lock6.style.backgroundColor= "#EFAA3A";
     } else {
         conditionforsixth = true;
-        lock6.style.backgroundColor= "white";
+        lock6.style.backgroundColor= "#E8D8A4";
     }; 
 });
 
@@ -451,8 +457,6 @@ color7.addEventListener(`click`,()=>{
 
 // click Animation
 
-
-moreshape.addEventListener(`click`,()=>{moreclick(moreshape)});
 
    function moreclick(element){
     element.style.backgroundColor= "#3A5444";

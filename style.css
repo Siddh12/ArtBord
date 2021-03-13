@@ -69,6 +69,10 @@
            top: 1.8cm;
            text-align: center;
            border-radius: 50PX;
+           overflow-y:scroll;
+         }
+         .shape::-webkit-scrollbar{
+           height: 2cm;
          }
 
          .canvas{
@@ -146,8 +150,8 @@
          /* more items */
 
 
-        .color7,.moreshape{
-          width: 2.5cm;
+        .color7{
+          width: 3cm;
           height: 0.7cm;
           font-size: 1.5ch;
           font-weight: bold;
@@ -162,11 +166,14 @@
         }
         .color7{
           position: relative;
-          bottom: 2.5cm;
-          left: 2.1cm;
+          bottom: 1.7cm;
+          left: 1.9cm;
         }
         .moreshape{
-          top: 1.6cm;
+          width: 1cm;
+          height: 0.5cm;
+          position: relative;
+          top: 2.5cm;
           left:2cm;
         }
 
@@ -207,18 +214,19 @@
           top: 3.9cm; 
           background-color: #A76269;
         }
-        .colorscarch{
+        .colorsearch{
           width: 4cm;
           height: 0.7cm;
-          border: black;
-          border-style: solid;
-          border-radius: 40px;
+          display: flex;
+          align-items: center;
+          /* border-radius: 40px; */
           position: relative;
           left: 1.3cm;
           top: 0.18cm;
-          background-color:#D4CEB8;
+          background-color: white;
+          font-size: 0.4cm;
         }
-        .shape1,.shape2{
+        .shape1,.shape2,.shape3,.shape4,.shape5{
           width: 5cm;
           height: 5cm;
           border: black;
@@ -236,6 +244,15 @@
         .shape2{
           position: relative;
           top: 1.3cm;
+        }
+        .shape3{
+          top: 1.6cm;
+        }
+        .shape4{
+          top: 1.9cm;
+        }
+        .shape5{
+          top: 2.2cm;
         }
         .art0{
           width: 15cm;
@@ -281,28 +298,28 @@
         .lock1,.lock2,.lock3,.lock4,.lock5,.lock6{
           width: 1cm;
           height: 1cm;
-          border: navy;
-          border-style: solid;
+          /* border: navy;
+          border-style: solid; */
           border-radius: 40px;
           position: relative;
           left: 5.4cm;
-          bottom: 6.36cm;
-          background-color: white;
+          bottom: 6.32cm;
+          background-color: #E8D8A4;
         }
         .lock2{
-           bottom:5.65cm;
+           bottom:5.46cm;
         }
         .lock3{
-           bottom:4.94cm;
+           bottom:4.6cm;
         }
         .lock4{
-           bottom:4.3cm;
+           bottom:3.85cm;
         }
         .lock5{
-           bottom:3.6cm;
+           bottom:3cm;
         }
         .lock6{
-           bottom:2.8cm; 
+           bottom:2.19cm; 
         }
         .lockimage1{
           height: 0.5cm;
