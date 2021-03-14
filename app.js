@@ -132,7 +132,12 @@ shape2.addEventListener(`click`,()=>{
         element.style.border= "#404040";
         element.style.borderStyle = "solid";
         element.style.backgroundColor = "#404040";
-        if (element == manupulatearray1[1]) {
+        if (element == manupulatearray1[0]) {
+            element.style.width = "0cm";
+            element.style.height= "0.2cm";
+            element.style.bottom = "55.2cm";
+            element.style.left= "1.04cm";
+        } else if (element == manupulatearray1[1]) {
             element.style.width = "0.2cm";
             element.style.height= "0.2cm";
             element.style.bottom = "15.2cm";
@@ -243,22 +248,12 @@ const colorarray = [".color1",".color2",".color3",".color4",".color5",".color6"]
 let colorarraymanupulate = colorarray.map((id)=>document.querySelector(id));
 function colorfiller(params){
     fillincolor = params;
- 
  colorarraymanupulate.forEach((element)=>{element.addEventListener(`mouseenter`,(e)=>{
-                fillincolor.style.backgroundColor = window.getComputedStyle(e.target).backgroundColor;  
+ fillincolor.style.backgroundColor = window.getComputedStyle(e.target).backgroundColor;  
  })})
 };
 
-
 // color generator
-
-
-var conditionforfirst = true;
-var conditionforsecond = true;
-var conditionforthird = true;
-var conditionforforth = true;
-var conditionforfifth = true;
-var conditionforsixth = true;
 
 var lock1 = document.querySelector(".lock1");
 var lock2 = document.querySelector(".lock2");
@@ -269,109 +264,88 @@ var lock6 = document.querySelector(".lock6");
 
 lock1.addEventListener(`click`,()=>{  
 
-    if (conditionforfirst == true) {
-        conditionforfirst = false;
+    if (condition[0] == true) {
+        condition[0] = false;
         lock1.style.backgroundColor= "#EFAA3A";
     } else {
-        conditionforfirst = true;
+        condition[0] = true;
         lock1.style.backgroundColor= "#E8D8A4";
     }; 
 
-});lock2.addEventListener(`click`,()=>{  
+});
+lock2.addEventListener(`click`,()=>{  
     
-    if (conditionforsecond == true) {
-        conditionforsecond = false;
+    if (condition[1] == true) {
+        condition[1] = false;
         lock2.style.backgroundColor= "#EFAA3A";
     } else {
-        conditionforsecond = true;
+        condition[1] = true;
         lock2.style.backgroundColor= "#E8D8A4";
     }; 
-});lock3.addEventListener(`click`,()=>{  
+});
+lock3.addEventListener(`click`,()=>{  
     
-    if (conditionforthird == true) {
-        conditionforthird = false;
+    if (condition[2] == true) {
+        condition[2] = false;
         lock3.style.backgroundColor= "#EFAA3A";
     } else {
-        conditionforthird = true;
+        condition[2] = true;
         lock3.style.backgroundColor= "#E8D8A4";
     }; 
-});lock4.addEventListener(`click`,()=>{  
+});
+lock4.addEventListener(`click`,()=>{  
     
-    if (conditionforforth == true) {
-        conditionforforth = false;
+    if (condition[3] == true) {
+        condition[3] = false;
         lock4.style.backgroundColor= "#EFAA3A";
     } else {
-        conditionforforth = true;
+        condition[3] = true;
         lock4.style.backgroundColor= "#E8D8A4";
     }; 
-});lock5.addEventListener(`click`,()=>{  
+});
+lock5.addEventListener(`click`,()=>{  
     
-    if (conditionforfifth == true) {
-        conditionforfifth = false;
+    if (condition[4] == true) {
+        condition[4] = false;
         lock5.style.backgroundColor= "#EFAA3A";
     } else {
-        conditionforfifth = true;
+        condition[4] = true;
         lock5.style.backgroundColor= "#E8D8A4";
     }; 
 });
 lock6.addEventListener(`click`,()=>{  
     
-    if (conditionforsixth == true) {
-        conditionforsixth = false;
+    if (condition[5] == true) {
+        condition[5] = false;
         lock6.style.backgroundColor= "#EFAA3A";
     } else {
-        conditionforsixth = true;
+        condition[5] = true;
         lock6.style.backgroundColor= "#E8D8A4";
     }; 
 });
+var condition =[true, true, true, true, true,true ];
 
 var color7 = document.querySelector(".color7")
 
 color7.addEventListener(`click`,()=>{
-    moreclick(color7);
-
-    
-    if (conditionforfirst) {
+    moreclick(color7); 
+   for (let index = 0; index < colorarraymanupulate.length; index++) {
+       const element = colorarraymanupulate[index];
+       if (condition[index]) {
         var colorcode1 = Math.round(856635*Math.random());
-        colorarraymanupulate[0].style.backgroundColor = "#"+colorcode1.toString();
-    };
-
-    if (conditionforsecond) {
-        var colorcode2 = Math.round(856615*Math.random());
-        colorarraymanupulate[1].style.backgroundColor = "#"+colorcode2.toString(); 
-    };
-
-    if (conditionforthird) {     
-        var colorcode3 = Math.round(857625*Math.random());
-        colorarraymanupulate[2].style.backgroundColor = "#"+colorcode3.toString();
-    };
-
-    if (conditionforforth) {
-        var colorcode4 = Math.round(556655*Math.random());
-        colorarraymanupulate[3].style.backgroundColor = "#"+colorcode4.toString();
-    };
-
-    if (conditionforfifth) {
-        var colorcode5 = Math.round(856663*Math.random());
-        colorarraymanupulate[4].style.backgroundColor = "#"+colorcode5.toString();
-    };
-
-    if (conditionforsixth) {
-        var colorcode6 = Math.round(859675*Math.random());
-        colorarraymanupulate[5].style.backgroundColor = "#"+colorcode6.toString();
-    };   
+        element.style.backgroundColor = "#"+colorcode1.toString();
+       }
+       } ;  
 });
-
 
 // click Animation
 
-
-   function moreclick(element){
-    element.style.backgroundColor= "#3A5444";
-    element.style.color= "white";
+ function moreclick(element){
+        element.style.backgroundColor= "#3A5444";
+        element.style.color= "white";
    setTimeout(()=>{
-    element.style.backgroundColor= "White";
-    element.style.color= "Black";
+        element.style.backgroundColor= "White";
+        element.style.color= "Black";
    },150)  
    };
    
