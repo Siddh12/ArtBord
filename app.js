@@ -5,8 +5,7 @@ manupulatearray1.forEach(element=>element.addEventListener(`click`,e=>colorfille
 
 const art2array = ["secondarta","secondartb","secondartc","secondartd","secondarte","secondartf","secondartg"];
 let manupulatearray2 = art2array.map(id=>document.getElementById(id));
-manupulatearray2.forEach((element)=>console.log(element));
-// element.addEventListener(`click`,(e)=> colorfiller(e.target)));
+manupulatearray2.forEach((element)=>element.addEventListener(`click`,(e)=> colorfiller(e.target)));
 
 var fillincolor;
 var firstart = document.querySelector(".firstart");
@@ -27,7 +26,6 @@ firstart.addEventListener(`click`,()=>{
     }; 
 });
 
-
 // for second art
 
 shape2.addEventListener(`click`,()=>{
@@ -40,7 +38,6 @@ shape2.addEventListener(`click`,()=>{
         element.classList.add(classofsecondart[index]);
     };
 });
-
 
 // function for color fill
 
