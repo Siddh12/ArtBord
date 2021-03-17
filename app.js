@@ -16,6 +16,26 @@ const classofsecondart = ["secondart1","secondart2","secondart3","secondart4","s
 // for frist art
 
 firstart.addEventListener(`click`,()=>{
+
+    if ( 
+               window.getComputedStyle(manupulatearray1[0]).backgroundColor !== "rgba(0, 0, 0, 0)"
+            || window.getComputedStyle(manupulatearray1[1]).backgroundColor !== "rgba(0, 0, 0, 0)"
+            || window.getComputedStyle(manupulatearray1[2]).backgroundColor !== "rgba(0, 0, 0, 0)"
+            || window.getComputedStyle(manupulatearray1[3]).backgroundColor !== "rgba(0, 0, 0, 0)"
+            || window.getComputedStyle(manupulatearray1[4]).backgroundColor !== "rgba(0, 0, 0, 0)"
+            || window.getComputedStyle(manupulatearray1[5]).backgroundColor !== "rgba(0, 0, 0, 0)"
+            || window.getComputedStyle(manupulatearray1[6]).backgroundColor !== "rgba(0, 0, 0, 0)"
+            || window.getComputedStyle(manupulatearray1[7]).backgroundColor !== "rgba(0, 0, 0, 0)"
+            || window.getComputedStyle(manupulatearray1[8]).backgroundColor !== "rgba(0, 0, 0, 0)"
+            || window.getComputedStyle(manupulatearray1[9]).backgroundColor !== "rgba(0, 0, 0, 0)"
+            || window.getComputedStyle(manupulatearray1[10]).backgroundColor !== "rgba(0, 0, 0, 0)"
+        ){
+        alert("do you want to rest the color")
+        for (let index = 0; index < manupulatearray1.length; index++) {
+            const element = manupulatearray1[index];
+            manupulatearray1[index].style.backgroundColor = "rgba(0, 0, 0, 0)";
+        };
+    }   
     for (let index = 0; index < manupulatearray2.length; index++) {
         const element = manupulatearray2[index];
         element.classList.remove(classofsecondart[index]);
@@ -28,7 +48,22 @@ firstart.addEventListener(`click`,()=>{
 
 // for second art
 
-shape2.addEventListener(`click`,()=>{
+shape2.addEventListener(`click`,()=>{  
+    if ( 
+        window.getComputedStyle(manupulatearray2[0]).backgroundColor !== "rgba(0, 0, 0, 0)"
+     || window.getComputedStyle(manupulatearray2[1]).backgroundColor !== "rgba(0, 0, 0, 0)"
+     || window.getComputedStyle(manupulatearray2[2]).backgroundColor !== "rgba(0, 0, 0, 0)"
+     || window.getComputedStyle(manupulatearray2[3]).backgroundColor !== "rgba(0, 0, 0, 0)"
+     || window.getComputedStyle(manupulatearray2[4]).backgroundColor !== "rgba(0, 0, 0, 0)"
+     || window.getComputedStyle(manupulatearray2[5]).backgroundColor !== "rgba(0, 0, 0, 0)"
+     || window.getComputedStyle(manupulatearray2[6]).backgroundColor !== "rgba(0, 0, 0, 0)"
+ ){
+ alert("do you want to rest the color");
+ for (let index = 0; index < manupulatearray2.length; index++) {
+     const element = manupulatearray2[index];
+     manupulatearray2[index].style.backgroundColor = "rgba(0, 0, 0, 0)";
+ };
+}   
     for (let index = 0; index < manupulatearray1.length; index++) {
         const element = manupulatearray1[index];
         element.classList.remove(classoffirstart[index]);
@@ -43,6 +78,7 @@ shape2.addEventListener(`click`,()=>{
 
 const colorarray = [".color1",".color2",".color3",".color4",".color5",".color6"];
 let colorarraymanupulate = colorarray.map((id)=>document.querySelector(id));
+
 function colorfiller(params){
     fillincolor = params;
  colorarraymanupulate.forEach((element)=>{element.addEventListener(`mouseenter`,(e)=>{
